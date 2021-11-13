@@ -201,7 +201,6 @@ nav ul li a:hover {
   top: 100px;
 }
 
-/*faq */
 .faq-container {
   margin: 60px auto;
 }
@@ -271,8 +270,53 @@ footer nav ul {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  color: #fff;
 }
-/* medium screen*/
+footer nav ul a {
+  color: #fff;
+}
+
+.pricing-container {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.pricing-card-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+.pricing-card {
+  display: flex;
+  width: 250px;
+  height: 350px;
+  background-color: hsl(229, 8%, 60%, 0.25);
+  padding: 20px;
+  border-radius: 5px;
+  flex-direction: column;
+  transition: transform 1s;
+}
+
+.pricing-card:hover {
+  transform: rotateY(360deg);
+}
+.pricing-card-cta {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+  .pricing-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+/* responsive breakpoints*/
 @media screen and (max-width: 1400px) {
   .hero-container {
     display: flex;
